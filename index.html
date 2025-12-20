@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="style/style-index.css">
+        <!-- Add Icon URL Bar -->
+        <title>Portfolio.</title>
+        <link rel="icon" href="assets/newlogo.png" type="image/icon type">
+
+        <!-- Tailwind & Flowbite CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+        <!-- FA Icon CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+
+        <!-- Google Font CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            poppins: ['Poppins'],
+                            nunito: ['Nunito'],
+                            saintDelafield: ['Mrs Saint Delafield']
+                        },
+                    },
+                },
+            };
+        </script>    
+    </head>
+
+    <body class="bg-[#0F172A]">
+
+        <div class="fixed top-16 right-16 w-72 h-72 rounded-full bg-[#16545c]/55 blur-[130px] z-0 pointer-events-none"></div>
+        <div class="fixed bottom-20 left-16 w-72 h-72 rounded-full bg-[#16525c]/85 blur-[130px] z-0 pointer-events-none"></div>
+
+        <div class="project-section flex justify-center mt-20 mb-20 bg-[#0F172A] px-20 z-20">
+            <div class="flex rounded-2x"> 
+                <div class="flex flex-col lg:grid lg:grid-cols-4 gap-3 h-screen"> 
+
+                    <!-- Divider Spacer -->
+                    <div class="col-span-2"></div>
+
+                    <div class="section-sidebar flex flex-col col-span-2 p-5 static lg:fixed top-20 ml-28 lg:ml-0 left-0 lg:left-32 h-screen w-[calc(50%-2rem)]">
+                        <p class="font-poppins font-bold text-5xl text-[#E1E8EE] w-96">Noval Fatriand</p>
+                        <p class="font-poppins font-medium text-2xl text-[#E1E8EE] mt-4 w-96">Back End Developer</p>
+                        <p class="font-poppins text-lg mt-6 font-normal w-80 text-[#62708E]">I build efficient and well-integrated website systems for every users.</p>
+
+                        <div class="font-poppins menu-navigation flex flex-col gap-6 mt-20">
+                            <div data-target="about" class="nav-item flex flex-row items-center group hover:cursor-pointer">
+                                <div class="line w-11 h-[1px] transition-all duration-300 ease-in-out bg-[#62708E]"></div><p class="ml-3 text-sm font-semibold transition-colors duration-300 ease-in-out text-[#62708E]">ABOUT</p>
+                            </div>
+                            <div data-target="experience" class="nav-item flex flex-row items-center group hover:cursor-pointer">
+                                <div class="line w-11 h-[1px] transition-all duration-300 ease-in-out bg-[#62708E]"></div><p class="ml-3 text-sm font-semibold transition-colors duration-300 ease-in-out text-[#62708E]">EXPERIENCE</p>
+                            </div>
+                            <div data-target="projects" class="nav-item flex flex-row items-center group hover:cursor-pointer">
+                                <div class="line w-11 h-[1px] transition-all duration-300 ease-in-out bg-[#62708E]"></div><p class="ml-3 text-sm font-semibold transition-colors duration-300 ease-in-out text-[#62708E]">PROJECTS</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row gap-10 mt-36">
+                            <div class="text-2xl hover:text-3xl transition-all duration-300 ease-in-out">
+                                <a href="https://github.com/novalfatriand"><i class="fab fa-github" style="color: #62708E;"></i></a>
+                            </div>
+                            <div class="text-2xl hover:text-3xl transition-all duration-300 ease-in-out">
+                                <a href="https://linkedin.com/in/novalfatriand"><i class="fab fa-linkedin" style="color: #62708E;"></i></a>
+                            </div>
+                            <div class="text-2xl hover:text-3xl transition-all duration-300 ease-in-out">
+                                <a href="https://instagram.com/novalfatriand"><i class="fab fa-instagram" style="color: #62708E;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Content Section Start -->
+                    <div class="section-content text-[#62708E] col-span-2 py-5 bg-orange-400 w-96 lg:w-full ml-28 lg:ml-0">
+
+                        <div id="about" class="section-about">
+                            <p class="block lg:hidden font-semibold text-xl font-poppins mb-5 mt-32">ABOUT</p>
+                            <p class="text-lg font-normal font-poppins text-[#8491A3]"><span class="text-[#c2cdd7]">Experienced</span> in handling IT troubleshooting across hardware, software, and network issues. Skilled in software and driver installation, technical support for end-users, and system maintenance. <br><br>
+                            Currently focusing on <span class="text-[#c2cdd7]">Back-End Development</span>, especially using PHP Native and Laravel framework, with basic knowledge of JavaScript. I’m an active and curious individual who enjoys exploring new skills and challenges, and able to work professionally both in teams and independently. <br><br>
+                            Below are some<span class="text-[#c2cdd7]"> skills </span>that I usually use</p>
+                            <div class="flex flex-row gap-3 mt-3">
+                                <div class="php-card bg-[#142D3D] py-1 px-5 rounded-full">
+                                    <p class="text-base text-[#57D7C8] font-normal font-poppins">PHP</p>
+                                </div>
+                                <div class="mysql-card bg-[#142D3D] py-1 px-5 rounded-full">
+                                    <p class="text-base text-[#57D7C8] font-normal font-poppins">MySQL</p>
+                                </div>
+                                <div class="git-card bg-[#142D3D] py-1 px-5 rounded-full">
+                                    <p class="text-base text-[#57D7C8] font-normal font-poppins">Git</p>
+                                </div>
+                                <div class="javascript-card bg-[#142D3D] py-1 px-5 rounded-full">
+                                    <p class="text-base text-[#57D7C8] font-normal font-poppins">JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="experience" class="section-experience font-poppins mt-40">
+                            <div class="grid grid-cols-4 gap-10">
+                                <div class="col-span-1">
+                                    <p class="text-[#62708E] text-sm font-medium mt-1.5">APRIL - MAY 2024</p>
+                                </div>
+                                <div class="col-span-3 flex flex-col">
+                                    <p class="text-xl font-medium text-[#E1E8EE]">Junior Web Developer<span class="text-base ml-4 text-[#b7bbbf]">Tristar Anugrah Perkasa</span></p>
+                                    <p class="text-base text-[#8491A3] mt-2">As a freelance developer, I was responsible for designing and developing a company profile website, focusing on both user experience and technical functionality. Including
+                                        Planned the UX flow, Designed responsive UI,and Performed regular website.</p>
+                                    <div class="flex flex-row gap-3 mt-5">
+                                        <div class="php-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">Web Development</p>
+                                        </div>
+                                        <div class="mysql-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">UI/UX Design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-4 gap-10 mt-14">
+                                <div class="col-span-1">
+                                    <p class="text-[#62708E] text-sm font-medium mt-1.5">MAY - JUNE 2025</p>
+                                </div>
+                                <div class="col-span-3 flex flex-col">
+                                    <p class="text-xl font-medium text-[#E1E8EE]">Technical Support<span class="text-base ml-4 text-[#b7bbbf]">BNI Java Jazz 2025</span></p>
+                                    <p class="text-base text-[#8491A3] mt-2">As a Technical Support, I was responsible for resolving hardware, software, and network issues, while ensuring smooth IT operations and providing direct support to end-users.</p>
+                                    <div class="flex flex-row gap-3 mt-5">
+                                        <div class="php-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">Technical</p>
+                                        </div>
+                                        <div class="mysql-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">Networking</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-4 gap-10 mt-14">
+                                <div class="col-span-1">
+                                    <p class="text-[#62708E] text-sm font-medium mt-1.5">AUG - SEP 2025</p>
+                                </div>
+                                <div class="col-span-3 flex flex-col">
+                                    <p class="text-xl font-medium text-[#E1E8EE]">IT Network<span class="text-base ml-4 text-[#b7bbbf]">Atmos Tech</span></p>
+                                    <p class="text-base text-[#8491A3] mt-2">As an IT Network Technician, I managed and maintained CCTV and network systems, monitored operations, installed 116 cameras, and resolved technical issues to ensure continuous performance.</p>
+                                    <div class="flex flex-row gap-3 mt-5">
+                                        <div class="mysql-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">Networking</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="projects" class="section-projects font-poppins mt-40">
+                            <div class="grid grid-cols-4 gap-10">
+                                <div class="col-span-1">
+                                    <img src="https://picsum.photos/200/300" class="w-full h-20 mt-2 rounded-md" alt="Project Image">
+                                </div>
+                                <div class="col-span-3 flex flex-col">
+                                    <a href="" class="hover:underline"><p class="text-xl font-normal text-[#E1E8EE]">Dishly</p></a>
+                                    <p class="text-base text-[#8491A3] mt-2">As a freelance developer, I was responsible for designing and developing a company profile website, focusing on both user experience and technical functionality. Including
+                                        Planned the UX flow, Designed responsive UI,and Performed regular website.</p>
+                                    <div class="flex flex-row gap-3 mt-5">
+                                        <div class="php-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">PHP</p>
+                                        </div>
+                                        <div class="mysql-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">MySQL</p>
+                                        </div>
+                                        <div class="mysql-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">JavaScript</p>
+                                        </div>
+                                        <div class="mysql-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">Tailwind CSS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-4 gap-10 mt-14">
+                                <div class="col-span-1">
+                                    <img src="https://picsum.photos/200/300" class="w-full h-20 mt-2 rounded-md" alt="Project Image">
+                                </div>
+                                <div class="col-span-3 flex flex-col">
+                                    <a href="" class="hover:underline"><p class="text-xl font-normal text-[#E1E8EE]">iClinic</p></a>
+                                    <p class="text-base text-[#8491A3] mt-2">As a freelance developer, I was responsible for designing and developing a company profile website, focusing on both user experience and technical functionality. Including
+                                        Planned the UX flow, Designed responsive UI,and Performed regular website.</p>
+                                    <div class="flex flex-row gap-3 mt-5">
+                                        <div class="php-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">PHP</p>
+                                        </div>
+                                        <div class="php-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">MySQL</p>
+                                        </div>
+                                        <div class="mysql-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">Tailwind CSS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-4 gap-10 mt-14">
+                                <div class="col-span-1">
+                                    <img src="https://picsum.photos/200/300" class="w-full h-20 mt-2 rounded-md" alt="Project Image">
+                                </div>
+                                <div class="col-span-3 flex flex-col">
+                                    <a href="" class="hover:underline"><p class="text-xl font-normal text-[#E1E8EE]">Tristar Anugrah Perkasa</p></a>
+                                    <p class="text-base text-[#8491A3] mt-2">As a freelance developer, I was responsible for designing and developing a company profile website, focusing on both user experience and technical functionality. Including
+                                        Planned the UX flow, Designed responsive UI,and Performed regular website.</p>
+                                    <div class="flex flex-row gap-3 mt-5">
+                                        <div class="php-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">HTML5</p>
+                                        </div>
+                                        <div class="mysql-card bg-[#142D3D] py-1.5 px-5 rounded-full">
+                                            <p class="text-sm text-[#57D7C8] font-medium font-poppins">Tailwind CSS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Project Section -->
+
+                        <div class="mt-40 mb-40 w-96 font-poppins text-sm leading-relaxed">
+                            <p>designed in <span class="text-[#9facc5]">Figma</span>, and coded in <span class="text-[#9facc5]">Visual Studio Code</span> by myself. Built this with <span class="text-[#9facc5]">Tailwind CSS</span>.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            const sections = document.querySelectorAll('.section-about, .section-experience, .section-projects');
+            const navItems = document.querySelectorAll('.nav-item');
+
+            function setActiveMenu() {
+                let current = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+
+                    if (window.scrollY >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                if (!current) current = 'about';
+
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.dataset.target === current) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', setActiveMenu);
+
+            window.addEventListener('load', setActiveMenu);
+
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    document.getElementById(item.dataset.target)
+                        .scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        </script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    </body>
+</html>
