@@ -49,7 +49,7 @@
 
                     <div class="section-sidebar flex flex-col col-span-2 py-0 lg:py-5 px-10 lg:px-0 static lg:fixed -mt-5 lg:-mt-0 top-20 left-0 lg:left-32 h-screen w-72 lg:w-[calc(50%-2rem)]">
                         <p class="font-poppins font-bold text-4xl lg:text-5xl text-[#E1E8EE] w-72 lg:w-96">Noval Fatriand</p>
-                        <p class="font-poppins font-medium text-xl lg:text-2xl text-[#E1E8EE] mt-4 w-72 lg:w-96">Back End Developer <span id="typing-text"></span></p>
+                        <p class="font-poppins font-normal lg:font-medium text-xl lg:text-2xl text-[#E1E8EE] mt-4 w-72 lg:w-96"><span id="typing-text"></span></p>
                         <p class="font-poppins text-base lg:text-lg mt-6 font-light lg:font-normal w-72 lg:w-80 text-[#62708E]">I build efficient and well-integrated website systems for every users.</p>
 
                         <div class="font-poppins menu-navigation flex flex-col gap-6 mt-20">
@@ -253,6 +253,8 @@
         </div>
 
 
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
         <script>
             const sections = document.querySelectorAll('.section-about, .section-experience, .section-projects');
             const navItems = document.querySelectorAll('.nav-item');
@@ -288,6 +290,18 @@
                     document.getElementById(item.dataset.target)
                         .scrollIntoView({ behavior: 'smooth' });
                 });
+            });
+
+            var typed = new Typed('#typing-text', {
+                strings: [
+                'Back End Developer'
+                ],
+                
+                typeSpeed: 50,
+                backSpeed: 30,
+                backDelay: 2000,
+                startDelay: 500,
+                loop: true
             });
         </script>
 
