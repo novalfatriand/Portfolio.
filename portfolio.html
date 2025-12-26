@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="style/style-index.css">
+        <!-- Add Icon URL Bar -->
+        <title>Portfolio.</title>
+        <link rel="icon" href="assets/newlogo.png" type="image/icon type">
+
+        <!-- Tailwind & Flowbite CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+        <!-- FA Icon CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+
+        <!-- Google Font CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            poppins: ['Poppins'],
+                            nunito: ['Nunito'],
+                            saintDelafield: ['Mrs Saint Delafield']
+                        },
+                    },
+                },
+            };
+        </script>    
+    </head>
+
+    <body>
+
+        <nav class="bg-white border-gray-200 shadow-sm">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8 px-32">
+                <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center font-nunito text-4xl font-semibold whitespace-nowrap">fatriand.</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-poppins font-light flex flex-col text-lg p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row gap-7 md:mt-0 md:border-0 md:bg-white">
+                    <li>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Home</a>
+                    </li>
+                    <li>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">About</a>
+                    </li>
+                    <li>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Projects</a>
+                    </li>
+                    <li>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Experience</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="hero-section" class="py-0 px-44">
+            <div class="container px-20 py-28">
+                <div class="flex flex-row justify-around items-center">
+                    <div class="flex flex-col">
+                        <h2 class="font-saintDelafield text-6xl text-green-700">Hello There 👋🏻</h2>
+                        <h1 class="font-nunito text-7xl font-semibold mt-2">Noval Fatriand</h1>
+                        <h3 class="font-poppins mt-10 text-2xl font-light">Junior Web Developer</h3>
+                    </div>
+                    <div>
+                        <img src="" width="300" height="300" alt="Hero Image" class="bg-gray-500 rounded-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 px-44 bg-purple-300">
+            <div class="container bg-green-300 px-20 py-28">
+                <div class="flex flex-row justify-around items-center">
+                    <div>
+                        <img src="" width="300" height="450" alt="Hero Image" class="bg-gray-500">
+                    </div>
+                    <div class="flex flex-col">
+                        <h2 class="font-saintDelafield text-6xl text-green-700">Introduce Myself</h2>
+                        <h1 class="font-nunito text-7xl font-semibold mt-2">Noval Fatriand</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 px-44">
+            <div class="container p-3">
+                <div class="">
+                    <p class="font-poppins font-bold text-4xl text-green-700">🚀 My Projects</p>
+                    <div class="w-52 h-8 bg-gradient-to-r from-green-600 to-white/10 ml-14 -mt-5"><span class="hidden">.</span></div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script>
+            const sections = document.querySelectorAll('.section-about, .section-experience, .section-projects');
+            const navItems = document.querySelectorAll('.nav-item');
+
+            function setActiveMenu() {
+                let current = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+
+                    if (window.scrollY >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                if (!current) current = 'about';
+
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.dataset.target === current) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', setActiveMenu);
+
+            window.addEventListener('load', setActiveMenu);
+
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    document.getElementById(item.dataset.target)
+                        .scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            var typed = new Typed('#typing-text', {
+                strings: [
+                'Back End Developer',
+                '2026 Portfolio.'
+                ],
+                
+                typeSpeed: 50,
+                backSpeed: 30,
+                backDelay: 2000,
+                startDelay: 500,
+                loop: true
+            });
+        </script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    </body>
+</html>
